@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Answer a few questions and get a practical shortlist of email marketing, CRM, AI writing, and marketing automation software that fits your business.">
+<meta name="theme-color" content="#080e1b">
+<link rel="canonical" href="https://mexiaeon.github.io/profitstack/software-finder.html">
+<title>Software Finder | Find tools for your business | ProfitStack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=profitstack-finder-20261108">
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="index.html">Profit<span>Stack</span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="index.html#tools">Explore tools</a><a href="software-finder.html" aria-current="page">Software Finder</a><a href="index.html#guides">Buying guides</a><a href="about.html">About</a></nav>
+<a class="navbtn" href="index.html">Back to ProfitStack ↗</a>
+</div></header>
+<main>
+<section class="finder-hero">
+<div class="wrap finder-hero-inner">
+<div>
+<div class="eyebrow">The ProfitStack Software Finder</div>
+<h1>Find software that <em>fits your work.</em></h1>
+<p class="lead">Tell us what you're trying to do, what you want to spend, and what matters most. Get a practical shortlist—with trade-offs to check before you subscribe.</p>
+<div class="finder-trust"><span>Independent recommendations</span><span>No paid rankings</span><span>About 1 minute</span></div>
+</div>
+<div class="finder-hero-panel">
+<div class="finder-orbit"><span>PS</span></div>
+<div><b>Less guessing.</b><p>Start with your needs—not a long list of software features.</p></div>
+</div>
+</div>
+</section>
+
+<section class="finder-section">
+<div class="wrap finder-layout">
+<form id="softwareFinder" class="finder-form">
+<div class="finder-form-top">
+<div><div class="section-kicker">Personalized shortlist</div><h2>Tell us what you need.</h2></div>
+<div class="finder-step-count" id="stepCount">Step 1 of 3</div>
+</div>
+<div class="finder-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<fieldset class="finder-fieldset">
+<legend><span class="question-number">01</span> What are you looking for?</legend>
+<div class="choice-grid">
+<label class="choice-card"><input type="radio" name="goal" value="email" checked><span class="choice-icon">✉</span><span class="choice-title">Email marketing</span><span class="choice-description">Newsletters, subscribers, and campaigns</span></label>
+<label class="choice-card"><input type="radio" name="goal" value="crm"><span class="choice-icon">◫</span><span class="choice-title">CRM & sales</span><span class="choice-description">Leads, customers, and sales pipeline</span></label>
+<label class="choice-card"><input type="radio" name="goal" value="ai"><span class="choice-icon">✳</span><span class="choice-title">AI writing & content</span><span class="choice-description">Drafts, marketing content, and SEO workflows</span></label>
+<label class="choice-card"><input type="radio" name="goal" value="automation"><span class="choice-icon">↗</span><span class="choice-title">Marketing automation</span><span class="choice-description">Follow-ups and repeatable workflows</span></label>
+</div>
+</fieldset>
+
+<fieldset class="finder-fieldset">
+<legend><span class="question-number">02</span> What's your monthly software budget?</legend>
+<div class="choice-grid budget-grid">
+<label class="choice-card compact"><input type="radio" name="budget" value="free" checked><span class="choice-title">Free only</span><span class="choice-description">Start at $0</span></label>
+<label class="choice-card compact"><input type="radio" name="budget" value="under20"><span class="choice-title">Under $20</span><span class="choice-description">Keep it lean</span></label>
+<label class="choice-card compact"><input type="radio" name="budget" value="20to50"><span class="choice-title">$20–$50</span><span class="choice-description">Room to grow</span></label>
+<label class="choice-card compact"><input type="radio" name="budget" value="50to100"><span class="choice-title">$50–$100</span><span class="choice-description">More capability</span></label>
+<label class="choice-card compact"><input type="radio" name="budget" value="flexible"><span class="choice-title">Flexible</span><span class="choice-description">Best fit first</span></label>
+</div>
+</fieldset>
+
+<fieldset class="finder-fieldset" id="listSizeField">
+<legend><span class="question-number">03</span> How large is your email audience?</legend>
+<p class="finder-hint">This helps us avoid suggesting a plan that your contact list could outgrow immediately.</p>
+<div class="choice-grid budget-grid">
+<label class="choice-card compact"><input type="radio" name="audience" value="under250" checked><span class="choice-title">Under 250</span><span class="choice-description">Just starting</span></label>
+<label class="choice-card compact"><input type="radio" name="audience" value="250to1k"><span class="choice-title">250–1,000</span><span class="choice-description">Building a list</span></label>
+<label class="choice-card compact"><input type="radio" name="audience" value="1kto5k"><span class="choice-title">1,000–5,000</span><span class="choice-description">Growing audience</span></label>
+<label class="choice-card compact"><input type="radio" name="audience" value="over5k"><span class="choice-title">5,000+</span><span class="choice-description">Larger list</span></label>
+<label class="choice-card compact"><input type="radio" name="audience" value="unknown"><span class="choice-title">Not sure</span><span class="choice-description">Help me compare</span></label>
+</div>
+</fieldset>
+
+<fieldset class="finder-fieldset">
+<legend><span class="question-number" id="priorityNumber">04</span> What matters most to you?</legend>
+<p class="finder-hint" id="priorityHint">Choose the priority that best describes your ideal email platform.</p>
+<div class="priority-list" id="priorityChoices">
+<label class="priority-option"><input type="radio" name="priority" value="simple" checked><span><b>Keep it simple</b><small>Easy newsletters and a straightforward setup</small></span></label>
+<label class="priority-option"><input type="radio" name="priority" value="lowcost"><span><b>Keep costs low</b><small>A useful free plan or affordable starting point</small></span></label>
+<label class="priority-option"><input type="radio" name="priority" value="automation"><span><b>More automation</b><small>Sequences, follow-ups, and landing pages</small></span></label>
+<label class="priority-option"><input type="radio" name="priority" value="large"><span><b>Manage a larger contact list</b><small>Contact storage and sending limits matter most</small></span></label>
+<label class="priority-option"><input type="radio" name="priority" value="integrations"><span><b>Integrations</b><small>Connect with the tools I already use</small></span></label>
+</div>
+</fieldset>
+
+<div class="finder-actions">
+<button class="btn primary finder-submit" type="submit">Find my software <span aria-hidden="true">→</span></button>
+<button class="finder-reset" type="reset">Reset answers</button>
+</div>
+<p class="finder-privacy">Your answers stay in this page. The Finder does not collect or send personal information.</p>
+</form>
+
+<aside class="finder-sidebar">
+<div class="sidebar-card">
+<div class="sidebar-label">How it works</div>
+<div class="sidebar-step"><span>1</span><div><b>Tell us your goal</b><p>Choose the kind of work you need software to handle.</p></div></div>
+<div class="sidebar-step"><span>2</span><div><b>Set your budget</b><p>We factor in free plans and the cost of moving up a tier.</p></div></div>
+<div class="sidebar-step"><span>3</span><div><b>Compare your matches</b><p>See why a tool fits and what to verify before paying.</p></div></div>
+</div>
+<div class="sidebar-note"><b>Independent by design.</b><p>Software is not ranked because a provider pays us. Recommendations are based on the answers you select and publicly available product information.</p></div>
+</aside>
+</div>
+</section>
+
+<section class="finder-results-section" id="resultsSection" hidden>
+<div class="wrap">
+<div class="section-kicker">Your results</div>
+<h2>Your software shortlist.</h2>
+<p class="finder-result-intro" id="resultIntro" aria-live="polite"></p>
+<div class="finder-results-grid" id="resultCards"></div>
+<div class="finder-result-bottom">
+<div><b>Before you subscribe</b><p>Plan limits, feature availability, and prices can change. Confirm the current details on the provider's official website and test the workflow with your own requirements.</p></div>
+<button type="button" class="btn secondary" id="changeAnswers">Change my answers</button>
+</div>
+</div>
+</section>
+
+<section class="finder-method">
+<div class="wrap finder-method-inner">
+<div><div class="section-kicker">A note about our recommendations</div><h2>A shortlist, not a sales pitch.</h2></div>
+<div><p>The Finder uses your selected goal, budget, audience size, and priority to produce a practical shortlist from the products covered by ProfitStack. It does not guarantee that a product is the cheapest or best for every business.</p><p>Some products have free plans, while others require a paid subscription for the features you need. We point out important limits rather than treating every plan as interchangeable. Our provider links are ordinary direct links; any future affiliate relationship will be disclosed.</p><p class="meta">Product plan information last reviewed November 7, 2026. Always verify current prices, limits, regional availability, and terms with the provider.</p></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">
+<div class="footrow"><a class="brand" href="index.html">Profit<span>Stack</span></a><div class="footlinks"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="disclosure.html">Affiliate disclosure</a><a href="privacy.html">Privacy</a></div></div>
+<div class="copyright">© 2026 ProfitStack. Independent software research and buying guides. Product names belong to their respective owners.</div>
+</div></footer>
+
+<script>
+(function(){
+"use strict";
+const form=document.getElementById("softwareFinder");
+const listField=document.getElementById("listSizeField");
+const priorityChoices=document.getElementById("priorityChoices");
+const priorityHint=document.getElementById("priorityHint");
+const stepCount=document.getElementById("stepCount");
+const progressBar=document.getElementById("progressBar");
+const resultsSection=document.getElementById("resultsSection");
+const resultCards=document.getElementById("resultCards");
+const resultIntro=document.getElementById("resultIntro");
+const prioritySets={
+ email:{
+  hint:"Choose the priority that best describes your ideal email platform.",
+  options:[["simple","Keep it simple","Easy newsletters and a straightforward setup"],["lowcost","Keep costs low","A useful free plan or affordable starting point"],["automation","More automation","Sequences, follow-ups, and landing pages"],["large","Manage a larger contact list","Contact storage and sending limits matter most"],["integrations","Integrations","Connect with the tools I already use"]]
+ },
+ crm:{
+  hint:"Think about what your team needs to organize and improve.",
+  options:[["pipeline","Track leads and deals","A clear view of contacts, opportunities, and sales activity"],["allinone","Connect customer teams","Keep customer information and multiple workflows together"],["automation","Automate sales follow-ups","Reduce repetitive work as your process grows"],["lowcost","Start with a free CRM","Get organized before committing to a paid tier"]]
+ },
+ ai:{
+  hint:"Choose the type of AI writing workflow you want to improve.",
+  options:[["seo","Marketing and SEO content","Plan, draft, and improve content for a publishing workflow"],["versatile","A flexible AI assistant","Writing plus research, brainstorming, and other tasks"],["simple","Drafts and editing","Improve everyday writing and revise content faster"]]
+ },
+ automation:{
+  hint:"Which process are you hoping to automate?",
+  options:[["emailjourneys","Email subscriber journeys","Welcome series, follow-ups, and campaign sequences"],["salesworkflow","CRM and sales workflows","Lead management, sales activity, and customer handoffs"],["simple","Simple welcome sequences","Start small with a few repeatable messages"],["advanced","More advanced marketing workflows","More complex journeys, segmentation, and campaign logic"]]
+ }
+};
+const tools={
+ mailerlite:{name:"MailerLite",category:"Email marketing",badge:"Simple email starting point",why:"A good place to start when you want newsletters, signup forms, and a manageable email workflow. Its current Free plan allows up to 250 active subscribers and 2,500 emails per 30 days; its free tier also limits the number of active automations and other items.",watch:"The 250-active-subscriber limit is easy to outgrow. Check the subscriber tier and monthly send allowance before importing a list.",official:"https://www.mailerlite.com/pricing",internal:"guides/best-email-marketing-small-business.html",internalLabel:"Read our email marketing buying guide",source:"https://www.mailerlite.com/help/plan-and-billing"},
+ brevo:{name:"Brevo",category:"Email marketing and customer communications",badge:"Large contact storage",why:"Worth considering when you need to store a large contact database but your daily email volume is modest. Its Free plan currently allows up to 100,000 stored contacts and 300 email sends per day.",watch:"The free sending allowance is 300 per day, not unlimited. If a campaign needs to reach more than 300 recipients that day, compare the paid sending tiers.",official:"https://www.brevo.com/pricing/",internal:"guides/best-email-marketing-small-business.html",internalLabel:"Read our email marketing buying guide",source:"https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan"},
+ getresponse:{name:"GetResponse",category:"Email marketing and automation",badge:"Campaigns and landing pages",why:"A strong option to evaluate when email campaigns, landing pages, and subscriber follow-up workflows need to work together. Its current Starter plan lists one custom automation workflow and unlimited monthly email sends.",watch:"Starter is a paid plan (currently listed at $19/month with monthly billing) and includes one custom workflow. More advanced automation and segmentation require higher tiers.",official:"https://www.getresponse.com/pricing",internal:"reviews/getresponse.html",internalLabel:"Read our GetResponse overview",source:"https://www.getresponse.com/pricing"},
+ mailchimp:{name:"Mailchimp",category:"Email marketing",badge:"Integrations and familiar workflows",why:"Worth comparing if its integration ecosystem, templates, and existing place in your business workflow are especially useful.",watch:"Its Free plan currently lists up to 250 contacts and 500 email sends per month. Check contact-count rules and the paid tier needed for the automations you want.",official:"https://mailchimp.com/pricing/marketing/",internal:"guides/best-email-marketing-small-business.html",internalLabel:"Read our email marketing buying guide",source:"https://mailchimp.com/pricing/marketing/"},
+ hubspot:{name:"HubSpot",category:"CRM and customer platform",badge:"Shared customer and sales view",why:"A useful starting point to evaluate when you need to organize contacts, leads, and sales activity in a shared CRM. HubSpot offers free CRM tools, so you can begin organizing records before considering paid Hubs.",watch:"Some advanced automation, reporting, and sales features depend on paid products and tiers. Check seats, onboarding, and feature limits before expanding.",official:"https://www.hubspot.com/pricing/crm",internal:"reviews/hubspot.html",internalLabel:"Read our HubSpot overview",source:"https://www.hubspot.com/pricing/crm"},
+ writesonic:{name:"Writesonic",category:"AI writing and marketing content",badge:"Specialist content workflow",why:"Worth evaluating when your priority is a structured marketing-content workflow, including AI-assisted drafting and search-related content tools.",watch:"Test output quality against your own content brief and review usage or credit limits carefully. AI-generated claims still need human fact-checking.",official:"https://writesonic.com/",internal:"reviews/writesonic.html",internalLabel:"Read our Writesonic overview",source:"https://writesonic.com/"},
+ chatgpt:{name:"ChatGPT",category:"General-purpose AI assistant",badge:"Flexible assistant across tasks",why:"A flexible option when you want help with writing, outlining, brainstorming, research support, and tasks beyond a specialized content workflow.",watch:"Compare the tools, model access, usage limits, data controls, and collaboration needs available on the plan you would actually use.",official:"https://chatgpt.com/pricing/",internal:"comparisons/writesonic-vs-chatgpt.html",internalLabel:"Read Writesonic vs. ChatGPT",source:"https://chatgpt.com/pricing/"}
+};
+function selected(name){const item=form.querySelector('input[name="'+name+'"]:checked');return item?item.value:"";}
+function choosePriority(goal,value){
+ const config=prioritySets[goal];
+ document.getElementById("priorityNumber").textContent="0"+(goal==="email"||goal==="automation"?"4":"3");
+ priorityHint.textContent=config.hint;
+ priorityChoices.innerHTML="";
+ config.options.forEach((option,index)=>{
+  const label=document.createElement("label");label.className="priority-option";
+  const input=document.createElement("input");input.type="radio";input.name="priority";input.value=option[0];input.checked=option[0]===value||(index===0&&!value);
+  const span=document.createElement("span");const b=document.createElement("b");b.textContent=option[1];const small=document.createElement("small");small.textContent=option[2];
+  span.append(b,small);label.append(input,span);priorityChoices.append(label);
+ });
+}
+function updateGoal(){
+ const goal=selected("goal");
+ listField.hidden=!(goal==="email"||goal==="automation");
+ choosePriority(goal,"");
+ stepCount.textContent=goal==="email"||goal==="automation"?"Step 1 of 4":"Step 1 of 3";
+ progressBar.style.width=goal==="email"||goal==="automation"?"25%":"33%";
+ resultsSection.hidden=true;
+}
+form.querySelectorAll('input[name="goal"]').forEach(input=>input.addEventListener("change",updateGoal));
+form.addEventListener("change",function(event){
+ if(event.target.name==="budget"||event.target.name==="audience"||event.target.name==="priority"){
+  const goal=selected("goal");
+  const step=goal==="email"||goal==="automation"?4:3;
+  stepCount.textContent="Step "+step+" of "+step;
+  progressBar.style.width="100%";
+ }
+});
+function recommendation(id,reason,warning){
+ return {tool:tools[id],reason:reason||tools[id].why,warning:warning||tools[id].watch};
+}
+function getMatches(goal,budget,audience,priority){
+ const small=audience==="under250";
+ const free=budget==="free";
+ if(goal==="email"){
+  if(priority==="large")return [
+   recommendation("brevo","Your contact database size is the main constraint. Brevo's free plan supports up to 100,000 stored contacts, which can be useful when your daily send volume stays within the free allowance.","Brevo's free allowance is 300 email sends per day. If you send larger campaigns, compare paid sending volumes before choosing."),
+   recommendation("getresponse","A paid alternative to compare if you want email campaigns and landing pages in one workflow.")
+  ];
+  if(priority==="automation")return free?[
+   recommendation("mailerlite","You selected a free-only budget. MailerLite's Free plan currently includes up to three active automations, which may cover a simple starting workflow if your list is within its limits.","The Free plan is capped at 250 active subscribers and 2,500 emails per 30 days. More advanced needs may require a paid plan."),
+   recommendation("getresponse","Compare GetResponse if you need a broader campaign and landing-page workflow and can consider a paid plan.","Starter includes one custom automation workflow; more advanced automation is on higher tiers.")
+  ]:[
+   recommendation("getresponse","Your priority is automated subscriber journeys. GetResponse combines campaigns, landing pages, and automation in one platform.","Starter is listed at $19/month and includes one custom workflow; check whether a higher tier is needed for your planned journeys."),
+   recommendation("mailerlite","Also compare MailerLite for a simpler newsletter workflow with a limited number of automations.")
+  ];
+  if(priority==="integrations")return [
+   recommendation("mailchimp","Its integration ecosystem may be useful when you want email marketing connected to tools your business already uses."),
+   recommendation("getresponse","Compare it if landing pages and automated follow-ups matter more than your existing integration stack.")
+  ];
+  if(priority==="lowcost"){
+   if(small)return [
+    recommendation("mailerlite","Your audience is small and you want to keep costs down. Its Free plan supports up to 250 active subscribers and 2,500 emails per 30 days."),
+    recommendation("brevo","Another free starting point if storing more contacts matters more than sending more than 300 emails a day.")
+   ];
+   return [
+    recommendation("brevo","Your list is larger than MailerLite's current free subscriber cap. Brevo stores up to 100,000 contacts on its Free plan, provided its daily sending allowance fits your needs.","The Free plan allows 300 email sends per day. A larger campaign may need a paid tier."),
+    recommendation("mailerlite","Compare its paid subscriber tiers if you prefer its newsletter workflow and want a predictable monthly allowance.")
+   ];
+  }
+  return [
+   recommendation("mailerlite",small?"For a straightforward newsletter and a small list, MailerLite is a focused place to start.":"MailerLite is worth comparing for a clean newsletter workflow, but your audience size may require a paid subscriber tier.","The Free plan is limited to 250 active subscribers. Check the paid tier for your actual list size."),
+   recommendation("brevo","Compare Brevo if your contact list is larger and you can work within its daily sending limit.")
+  ];
+ }
+ if(goal==="crm")return [
+  recommendation("hubspot","Your goal is to manage leads, customer records, and sales activity. HubSpot's CRM tools provide a central place to organize those relationships.",budget==="free"?"Free CRM tools are available, but advanced automation, reporting, and sales features may require paid Hubs. Verify the exact feature tier.": "Check paid Hub tiers, seat requirements, and onboarding costs before expanding."),
+  recommendation("getresponse","Consider it alongside a CRM if your main follow-up process is email campaigns and subscriber journeys rather than a full sales pipeline.")
+ ];
+ if(goal==="ai"){
+  if(priority==="seo")return [
+   recommendation("writesonic","Your priority is a dedicated marketing-content workflow. Writesonic is positioned around AI-assisted content and search-related workflows.","Run a real content brief through the full workflow, inspect the editing required, and check usage or credit limits."),
+   recommendation("chatgpt","Compare ChatGPT if you want a broader assistant for research support, outlining, editing, and tasks beyond content production.")
+  ];
+  return [
+   recommendation("chatgpt","You want a flexible assistant that can help with writing and work beyond a specialist content workflow.","Compare available model access, usage limits, data controls, and team features on the plan you would use."),
+   recommendation("writesonic","Compare Writesonic if your work becomes more focused on repeatable marketing-content and search-related tasks.")
+  ];
+ }
+ if(priority==="salesworkflow")return [
+  recommendation("hubspot","Your automation needs are CRM-centered: tracking leads, organizing customer information, and coordinating sales workflows.","Advanced automation and reporting depend on HubSpot's product and plan tiers. Check limits and seats before committing."),
+  recommendation("getresponse","Compare it if the workflow you want to automate is mainly email subscriber communication.")
+ ];
+ if(priority==="simple")return free?[
+  recommendation(small||audience==="unknown"?"mailerlite":"brevo","You want a simple starting workflow and selected a free-only budget. "+(small?"MailerLite has a focused newsletter setup and a small-list free plan.":"Brevo may suit a larger stored contact list if 300 sends per day is enough.")),
+  recommendation("getresponse","A paid option to consider later if you need landing pages and more involved email campaigns.")
+ ]:[
+  recommendation("getresponse","Your goal is to automate simple email welcome and follow-up sequences in a campaign platform.","Starter includes one custom workflow. Check higher tiers if you need several distinct journeys."),
+  recommendation("mailerlite","A simpler alternative to compare for newsletters and a small number of active automations.")
+ ];
+ return [
+  recommendation("getresponse","Your priority is a broader email marketing workflow with landing pages, subscriber journeys, and campaign tools.","Starter includes one custom workflow. More advanced automation and segmentation require higher tiers."),
+  recommendation("hubspot","If your automation needs depend on lead records and sales processes, compare HubSpot's CRM-centered workflows.")
+ ];
+}
+function cardHTML(item,index){
+ const t=item.tool;
+ const label=index===0?"Best match":"Also consider";
+ return '<article class="match-card '+(index===0?"featured-match":"")+'">'+
+ '<div class="match-card-top"><span class="match-label">'+label+'</span><span class="match-category">'+t.category+'</span></div>'+
+ '<div class="match-title-row"><div><h3>'+t.name+'</h3><span class="match-badge">'+t.badge+'</span></div><span class="match-rank">0'+(index+1)+'</span></div>'+
+ '<p class="match-reason">'+item.reason+'</p>'+
+ '<div class="match-caution"><b>Check before buying</b><p>'+item.warning+'</p></div>'+
+ '<div class="match-links"><a class="btn primary" href="'+t.official+'" target="_blank" rel="noopener noreferrer">Official website ↗</a><a class="match-internal" href="'+t.internal+'">'+t.internalLabel+' →</a></div>'+
+ '<p class="source-line">Product details: <a href="'+t.source+'" target="_blank" rel="noopener noreferrer">provider information ↗</a></p>'+
+ '</article>';
+}
+form.addEventListener("submit",function(event){
+ event.preventDefault();
+ const goal=selected("goal"),budget=selected("budget"),audience=selected("audience"),priority=selected("priority");
+ const matches=getMatches(goal,budget,audience,priority);
+ const goalNames={email:"email marketing",crm:"CRM and sales",ai:"AI writing and content",automation:"marketing automation"};
+ const budgetNames={free:"free only",under20:"under $20/month", "20to50":"$20–$50/month","50to100":"$50–$100/month",flexible:"a flexible budget"};
+ resultIntro.textContent="Based on your goal of "+goalNames[goal]+", a budget of "+budgetNames[budget]+(goal==="email"||goal==="automation"?", and an email audience of "+(audience==="under250"?"under 250":audience==="250to1k"?"250–1,000":audience==="1kto5k"?"1,000–5,000":audience==="over5k"?"more than 5,000":"an unknown size"):"")+". These are matches to investigate, not a guarantee that a product is right for every business.";
+ resultCards.innerHTML=matches.map(cardHTML).join("");
+ resultsSection.hidden=false;
+ resultsSection.scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.getElementById("changeAnswers").addEventListener("click",function(){resultsSection.hidden=true;form.scrollIntoView({behavior:"smooth",block:"start"});});
+form.addEventListener("reset",function(){setTimeout(updateGoal,0);});
+updateGoal();
+})();
+</script>
+</body>
+</html>

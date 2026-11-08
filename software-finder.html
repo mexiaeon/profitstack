@@ -11,6 +11,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=profitstack-finder-20261108">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3XXV1QDVFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3XXV1QDVFR');
+  document.addEventListener('click', function(event) {
+    const link = event.target.closest('a[href]');
+    if (!link) return;
+    const url = new URL(link.href, window.location.href);
+    if (url.origin !== window.location.origin) {
+      gtag('event', 'provider_link_click', {
+        link_url: url.href,
+        link_text: (link.innerText || link.getAttribute('aria-label') || '').trim().slice(0, 100),
+        page_path: window.location.pathname
+      });
+    }
+  });
+</script>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -284,6 +304,7 @@ form.addEventListener("submit",function(event){
  event.preventDefault();
  const goal=selected("goal"),budget=selected("budget"),audience=selected("audience"),priority=selected("priority");
  const matches=getMatches(goal,budget,audience,priority);
+ gtag("event","software_finder_complete",{goal:goal,budget:budget,audience:audience,priority:priority,result_count:matches.length});
  const goalNames={email:"email marketing",crm:"CRM and sales",ai:"AI writing and content",automation:"marketing automation"};
  const budgetNames={free:"free only",under20:"under $20/month", "20to50":"$20–$50/month","50to100":"$50–$100/month",flexible:"a flexible budget"};
  resultIntro.textContent="Based on your goal of "+goalNames[goal]+", a budget of "+budgetNames[budget]+(goal==="email"||goal==="automation"?", and an email audience of "+(audience==="under250"?"under 250":audience==="250to1k"?"250–1,000":audience==="1kto5k"?"1,000–5,000":audience==="over5k"?"more than 5,000":"an unknown size"):"")+". These are matches to investigate, not a guarantee that a product is right for every business.";

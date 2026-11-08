@@ -28,6 +28,26 @@
   "mainEntityOfPage":"https://mexiaeon.github.io/profitstack/guides/best-email-marketing-small-business.html"
 }
 </script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3XXV1QDVFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3XXV1QDVFR');
+  document.addEventListener('click', function(event) {
+    const link = event.target.closest('a[href]');
+    if (!link) return;
+    const url = new URL(link.href, window.location.href);
+    if (url.origin !== window.location.origin) {
+      gtag('event', 'provider_link_click', {
+        link_url: url.href,
+        link_text: (link.innerText || link.getAttribute('aria-label') || '').trim().slice(0, 100),
+        page_path: window.location.pathname
+      });
+    }
+  });
+</script>
 </head>
 <body>
 <header><div class="wrap nav">

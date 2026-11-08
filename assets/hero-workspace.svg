@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+<defs>
+ <linearGradient id="bg" x1="110" y1="50" x2="1080" y2="850" gradientUnits="userSpaceOnUse"><stop stop-color="#17294A"/><stop offset=".55" stop-color="#121B35"/><stop offset="1" stop-color="#211B43"/></linearGradient>
+ <linearGradient id="blue" x1="180" y1="170" x2="500" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#72C8FF"/><stop offset="1" stop-color="#5B75F5"/></linearGradient>
+ <linearGradient id="violet" x1="790" y1="130" x2="1010" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#B59AFF"/><stop offset="1" stop-color="#6C5BEA"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8CE5D0"/><stop offset="1" stop-color="#55BFEA"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<rect x="64" y="62" width="1072" height="776" rx="42" fill="url(#bg)" stroke="#FFFFFF" stroke-opacity=".16"/>
+<circle cx="930" cy="164" r="210" fill="#805FF5" fill-opacity=".19" filter="url(#shadow)"/>
+<circle cx="275" cy="725" r="220" fill="#3EA9E8" fill-opacity=".13" filter="url(#shadow)"/>
+<rect x="126" y="126" width="948" height="648" rx="25" fill="#0B1325" stroke="#A9C3FF" stroke-opacity=".24"/>
+<path d="M151 126h898a25 25 0 0 1 25 25v47H126v-47a25 25 0 0 1 25-25Z" fill="#1B2B49"/>
+<circle cx="164" cy="160" r="6" fill="#FF8D98"/><circle cx="187" cy="160" r="6" fill="#FFC875"/><circle cx="210" cy="160" r="6" fill="#83DDBD"/>
+<rect x="252" y="148" width="300" height="23" rx="11.5" fill="#293D5E"/>
+<rect x="154" y="224" width="180" height="526" rx="15" fill="#111D34"/>
+<rect x="177" y="254" width="104" height="12" rx="6" fill="#DCE7FF" fill-opacity=".84"/>
+<rect x="177" y="294" width="128" height="34" rx="10" fill="#6A7FF0" fill-opacity=".2"/>
+<rect x="190" y="305" width="78" height="11" rx="5.5" fill="#9BAEFF"/>
+<rect x="177" y="351" width="116" height="10" rx="5" fill="#8395B4" fill-opacity=".52"/>
+<rect x="177" y="382" width="94" height="10" rx="5" fill="#8395B4" fill-opacity=".38"/>
+<rect x="177" y="413" width="119" height="10" rx="5" fill="#8395B4" fill-opacity=".38"/>
+<rect x="177" y="444" width="82" height="10" rx="5" fill="#8395B4" fill-opacity=".38"/>
+<rect x="177" y="686" width="132" height="37" rx="10" fill="#253B5D"/>
+<circle cx="196" cy="704" r="8" fill="#83C9F8"/><rect x="212" y="699" width="75" height="9" rx="4.5" fill="#B8C9E5" fill-opacity=".72"/>
+<rect x="359" y="224" width="680" height="156" rx="17" fill="#172641" stroke="#FFFFFF" stroke-opacity=".09"/>
+<text x="389" y="263" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#9FB2D0" letter-spacing="2">WORKSPACE OVERVIEW</text>
+<text x="389" y="318" font-family="Arial,sans-serif" font-size="37" font-weight="700" fill="#F4F7FF">Make the next decision clearer.</text>
+<rect x="389" y="340" width="185" height="9" rx="4.5" fill="#687D9E" fill-opacity=".55"/>
+<rect x="359" y="401" width="323" height="202" rx="17" fill="#172641" stroke="#FFFFFF" stroke-opacity=".09"/>
+<text x="385" y="438" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#AABBD6">TOOLS IN YOUR STACK</text>
+<rect x="385" y="461" width="270" height="48" rx="11" fill="#213656"/>
+<rect x="400" y="473" width="25" height="25" rx="8" fill="url(#blue)"/>
+<rect x="440" y="474" width="118" height="9" rx="4.5" fill="#D6E3F8"/>
+<rect x="440" y="490" width="78" height="7" rx="3.5" fill="#8094B3"/>
+<rect x="385" y="524" width="270" height="48" rx="11" fill="#213656"/>
+<rect x="400" y="536" width="25" height="25" rx="8" fill="url(#violet)"/>
+<rect x="440" y="537" width="145" height="9" rx="4.5" fill="#D6E3F8"/>
+<rect x="440" y="553" width="92" height="7" rx="3.5" fill="#8094B3"/>
+<rect x="704" y="401" width="335" height="349" rx="17" fill="#172641" stroke="#FFFFFF" stroke-opacity=".09"/>
+<text x="733" y="438" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#AABBD6">DECISION SIGNALS</text>
+<rect x="733" y="463" width="276" height="90" rx="13" fill="#203453"/>
+<text x="755" y="493" font-family="Arial,sans-serif" font-size="12" fill="#9FB2D0">WORKFLOW FIT</text>
+<text x="755" y="529" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#F4F7FF">Strong</text>
+<circle cx="969" cy="508" r="19" fill="#5ACDB8" fill-opacity=".19"/><path d="m960 508 6 6 12-14" stroke="#80E2CF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="733" y="593" font-family="Arial,sans-serif" font-size="12" fill="#9FB2D0">COMPARE THE DETAILS</text>
+<path d="M747 697V631M747 697H993" stroke="#506889" stroke-width="2" stroke-linecap="round"/>
+<path d="m763 673 47-25 43 12 51-47 43 14 33-35" stroke="url(#blue)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="947" cy="592" r="7" fill="#B39BFF"/>
+<rect x="62" y="500" width="238" height="112" rx="18" fill="#172947" stroke="#8BCBFF" stroke-opacity=".32"/>
+<circle cx="99" cy="539" r="18" fill="#4BADEB" fill-opacity=".18"/><path d="m89 539 7 7 14-16" stroke="#91D8FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="128" y="535" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#A8BEDF" letter-spacing="1">CLEARER CHOICES</text>
+<text x="88" y="581" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#F4F7FF">Less noise. More signal.</text>
+<rect x="882" y="718" width="256" height="105" rx="17" fill="#29244B" stroke="#B69CFF" stroke-opacity=".36"/>
+<circle cx="916" cy="753" r="13" fill="#A68AFF"/><path d="m916 744 2.6 6.4L925 753l-6.4 2.6L916 762l-2.6-6.4L907 753l6.4-2.6L916 744Z" fill="#fff"/>
+<text x="941" y="750" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#C7B7FF" letter-spacing="1">BUY WITH INTENT</text>
+<text x="910" y="786" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#F4F0FF">Choose what fits your work.</text>
+</svg>

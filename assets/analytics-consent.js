@@ -17,10 +17,13 @@ function hide(){panel.hidden=true;settings.hidden=false}
 function set(v){save(v);if(v==="yes")load();hide()}
 function init(){
  panel=document.createElement("section");panel.className="ag-consent-banner";panel.hidden=true;panel.setAttribute("role","dialog");panel.setAttribute("aria-label","Analytics preferences");
- const privacy=location.pathname.indexOf("/es/")===0?"privacidad.html":(location.pathname.indexOf("/reviews/")===0||location.pathname.indexOf("/guides/")===0||location.pathname.indexOf("/comparisons/")===0?"../privacy.html":"privacy.html");
- panel.innerHTML='<div class="ag-consent-copy"><strong>Help improve AgencyStack Guide</strong><p>Optional Google Analytics helps us understand which guides are useful. Analytics stays off unless you accept. You can change this choice later.</p><a href="'+privacy+'">Privacy policy</a></div><div class="ag-consent-actions"><button type="button" class="ag-consent-secondary" data-reject>Reject analytics</button><button type="button" class="ag-consent-primary" data-accept>Accept analytics</button></div>';
+ const isEs=location.pathname.indexOf("/es/")>=0;
+ const privacy=isEs?"privacidad.html":(location.pathname.indexOf("/reviews/")>=0||location.pathname.indexOf("/guides/")>=0||location.pathname.indexOf("/comparisons/")>=0?"../privacy.html":"privacy.html");
+ panel.innerHTML=isEs
+  ? '<div class="ag-consent-copy"><strong>Ayúdanos a mejorar AgencyStack Guide</strong><p>Google Analytics opcional nos ayuda a entender qué guías son útiles. La analítica permanece desactivada salvo que la aceptes. Puedes cambiar tu decisión después.</p><a href="'+privacy+'">Política de privacidad</a></div><div class="ag-consent-actions"><button type="button" class="ag-consent-secondary" data-reject>Rechazar analítica</button><button type="button" class="ag-consent-primary" data-accept>Aceptar analítica</button></div>'
+  : '<div class="ag-consent-copy"><strong>Help improve AgencyStack Guide</strong><p>Optional Google Analytics helps us understand which guides are useful. Analytics stays off unless you accept. You can change this choice later.</p><a href="'+privacy+'">Privacy policy</a></div><div class="ag-consent-actions"><button type="button" class="ag-consent-secondary" data-reject>Reject analytics</button><button type="button" class="ag-consent-primary" data-accept>Accept analytics</button></div>';
  document.body.appendChild(panel);
- settings=document.createElement("button");settings.type="button";settings.className="ag-analytics-settings";settings.textContent="Analytics settings";settings.setAttribute("aria-label","Open analytics settings");settings.addEventListener("click",show);document.body.appendChild(settings);
+ settings=document.createElement("button");settings.type="button";settings.className="ag-analytics-settings";settings.textContent=isEs?"Preferencias de analítica":"Analytics settings";settings.setAttribute("aria-label",isEs?"Abrir preferencias de analítica":"Open analytics settings");settings.addEventListener("click",show);document.body.appendChild(settings);
  panel.querySelector("[data-accept]").addEventListener("click",()=>set("yes"));panel.querySelector("[data-reject]").addEventListener("click",()=>set("no"));
  const c=choice();if(c==="yes"){load();hide()}else if(c==="no"){hide()}else{show()}
 }

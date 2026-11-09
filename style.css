@@ -329,3 +329,15 @@ footer{border-top:1px solid #ffffff17;padding:38px 0 25px;color:#94a4b9;font-siz
 .cons-list{border-top:1px solid #ffffff16;margin-top:10px!important;padding-top:8px!important}
 .cons-list li:before{content:"–";color:#ffb28f}
 @media(max-width:640px){.decision-columns,.pros-cons-grid{grid-template-columns:1fr}.decision-panel{padding:17px}.pros-cons-card{padding:16px}}
+
+/* AgencyStack Guide identity and optional analytics preferences */
+.brand-guide{font:800 9px/1 "Manrope",Arial,sans-serif;letter-spacing:1.25px;color:var(--muted);margin-left:-5px;align-self:flex-end;padding-bottom:2px}
+.language-link{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;border:1px solid #405574;border-radius:999px;color:#dce8fa;font-size:11px;font-weight:800;letter-spacing:.7px}
+.language-link:hover{border-color:var(--blue);color:#fff;background:#82baff12}
+.ag-consent-banner{position:fixed;z-index:10000;left:50%;bottom:18px;transform:translateX(-50%);width:min(920px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;gap:22px;padding:18px 20px;border:1px solid #425a7b;border-radius:17px;background:#101c30;box-shadow:0 18px 65px #0009;color:#f4f7ff;font:14px/1.5 "DM Sans",Arial,sans-serif}
+.ag-consent-banner[hidden],.ag-analytics-settings[hidden]{display:none}
+.ag-consent-copy{max-width:610px}.ag-consent-copy strong{display:block;font-size:15px;margin-bottom:4px}.ag-consent-copy p{color:#b7c5d9;margin:0 0 5px;font-size:12px}.ag-consent-copy a{font-size:12px;color:#9ec5ff;text-decoration:underline;text-underline-offset:3px}
+.ag-consent-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.ag-consent-actions button,.ag-analytics-settings{font:700 12px/1.2 "DM Sans",Arial,sans-serif;border-radius:999px;padding:11px 14px;cursor:pointer}
+.ag-consent-secondary{color:#e3edfc;background:transparent;border:1px solid #536987}.ag-consent-primary{color:#07101d;background:#9ec5ff;border:1px solid #9ec5ff}.ag-consent-actions button:hover,.ag-analytics-settings:hover{filter:brightness(1.08)}
+.ag-analytics-settings{position:fixed;z-index:9999;right:14px;bottom:12px;color:#dce8fa;background:#101c30;border:1px solid #536987;box-shadow:0 6px 24px #0007}
+@media(max-width:640px){.brand-guide{font-size:8px}.ag-consent-banner{display:block;bottom:8px;padding:14px}.ag-consent-actions{margin-top:12px}.ag-consent-actions button{flex:1}.ag-analytics-settings{right:10px;bottom:8px}}

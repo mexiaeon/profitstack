@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://mexiaeon.github.io/profitstack/</loc></url>
   <url><loc>https://mexiaeon.github.io/profitstack/about.html</loc></url>
   <url><loc>https://mexiaeon.github.io/profitstack/contact.html</loc></url>
@@ -15,4 +15,11 @@
   <url><loc>https://mexiaeon.github.io/profitstack/software-finder.html</loc></url>
   <url><loc>https://mexiaeon.github.io/profitstack/guides/best-free-crm-for-freelancers.html</loc></url>
   <url><loc>https://mexiaeon.github.io/profitstack/comparisons/mailerlite-vs-brevo.html</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/reviews/highlevel.html</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/guides/best-crm-for-marketing-agencies.html</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/es/</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/es/revision-highlevel.html</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/es/mejor-crm-para-agencias.html</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/es/aviso-de-afiliados.html</loc></url>
+  <url><loc>https://mexiaeon.github.io/profitstack/es/privacidad.html</loc></url>
 </urlset>

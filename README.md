@@ -1,4 +1,4 @@
-# ProfitStack website — launch starter
+# AgencyStack Guide website — launch starter
 
 This is a responsive static website for an independent AI and business software publication.
 
@@ -8,7 +8,7 @@ This is a responsive static website for an independent AI and business software 
 - 3 research-based software overviews: GetResponse, HubSpot, Writesonic
 - 2 comparison guides and 1 AI-writing buyer checklist
 - Responsive layout, SEO titles/descriptions, sitemap and robots.txt
-- No framework, backend, analytics, cookies, or email collection
+- Static GitHub Pages site; optional Google Analytics 4 is loaded only after visitor consent; no user accounts, payments, or newsletter collection at launch
 
 ## Preview
 Open `index.html` in a browser. The website is static and can be hosted on GitHub Pages, Netlify, or another static host.
@@ -37,18 +37,22 @@ Open `index.html` in a browser. The website is static and can be hosted on GitHu
   - Official signup page advertises 20% recurring commission for up to 12 months. The application asks for country, website, company/brand, promotion plan, platform URL, approximate traffic and relevant content. Approval and payout methods must be confirmed in the dashboard/terms.
 
 ## Honest application positioning (copy/adapt)
-**Website description:** "ProfitStack is an independent software publication creating research-based guides and comparisons for AI tools, email marketing, CRM, and business software. Our content helps US-based small businesses, creators, and growing teams evaluate products, compare workflows, and verify plan details before purchasing."
+**Website description:** "AgencyStack Guide is an independent software publication creating research-based guides and comparisons for AI tools, email marketing, CRM, and business software. Our content helps US-based small businesses, creators, and growing teams evaluate products, compare workflows, and verify plan details before purchasing."
 
 **Promotion plan:** "We will promote through original SEO-focused software overviews, product comparisons, practical buyer checklists, and educational articles published on our website. We will clearly disclose affiliate relationships, follow brand guidelines, and use only approved tracking links. We do not use misleading claims, incentivized clicks, or spam."
 
 **Traffic:** "New website; recently launched. We are building an original content library and do not yet have established traffic." Do not inflate this figure.
 
-**Prior affiliate experience:** "New to affiliate publishing; launching ProfitStack as an independent software-review publication." Use only if accurate.
+**Prior affiliate experience:** "New to affiliate publishing; launching AgencyStack Guide as an independent software-review publication." Use only if accurate.
 
-**Company name field:** If you have not formed a legal entity, do not claim ProfitStack is an LLC or corporation. Enter your actual legal name or "ProfitStack (website brand / independent publisher)" only if the form accepts a trading/brand name. Never invent a company registration or tax ID.
+**Company name field:** If you have not formed a legal entity, do not claim AgencyStack Guide is an LLC or corporation. Enter your actual legal name or "AgencyStack Guide (website brand / independent publisher)" only if the form accepts a trading/brand name. Never invent a company registration or tax ID.
 
 ## Notes
 - The direct provider links in this version do not earn commission.
 - Add approved tracking URLs manually to the relevant provider buttons after approval.
 - Keep the affiliate disclosure next to any affiliate link and review the applicable FTC disclosure guidance.
 - This package is a website starter, not legal or tax advice.
+
+
+## AgencyStack Guide direction
+The site now focuses on software for small agencies, freelancers and web designers. Existing ProfitStack URLs and Search Console verification files are retained. New English and Spanish entry pages and agency CRM guides are included. GA4 is consent-gated through `assets/analytics-consent.js`.

@@ -303,3 +303,29 @@ footer{border-top:1px solid #ffffff17;padding:38px 0 25px;color:#94a4b9;font-siz
 .quick-arrow{margin-left:auto;color:#91baff;font-size:17px}
 .quick-picks-note{font-size:10px;color:#8296b2;margin:13px 2px 0}
 @media(max-width:760px){.quick-picks-grid{grid-template-columns:1fr}.quick-picks-head{align-items:start;flex-direction:column}.quick-picks{padding:27px 0 20px}}
+
+
+/* Comparison page decision summaries */
+.decision-panel{margin:26px 0 24px;padding:23px;border:1px solid #3a5275;border-radius:19px;background:radial-gradient(ellipse at 90% 0%,#6e79bb22,transparent 42%),linear-gradient(135deg,#162943,#101a2c)}
+.decision-panel-label{font-size:10px;text-transform:uppercase;letter-spacing:1.35px;color:#a9c8f4;font-weight:900;margin-bottom:17px}
+.decision-columns{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.decision-columns>div{padding:17px;border:1px solid #344b6b;border-radius:14px;background:#0d192b99}
+.decision-brand{display:inline-flex;padding:5px 9px;border-radius:7px;font-size:10px;font-weight:900;letter-spacing:.3px;margin-bottom:11px}
+.mailerlite-mark{background:#e9f5ff;color:#1765a5}
+.brevo-mark{background:#fce8e8;color:#9d3535}
+.getresponse-mark{background:#e8f5ed;color:#28764b}
+.hubspot-mark{background:#fff0e7;color:#a34f24}
+.decision-columns h3{font-size:17px;margin:0 0 8px;color:#f2f6ff}
+.decision-columns p{font-size:12px;line-height:1.65;color:#adbed3;margin:0 0 13px}
+.decision-columns .textlink{font-size:11px}
+.decision-caveat{border-top:1px solid #ffffff18;padding-top:13px;margin:17px 0 0!important;font-size:11px!important;color:#91a6c2!important}
+.pros-cons-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0 30px}
+.pros-cons-card{border:1px solid #304663;border-radius:16px;background:linear-gradient(145deg,#14233a,#101a2b);padding:19px}
+.pros-cons-card h3{font-size:16px;margin:0 0 13px}
+.pros-cons-card ul{list-style:none;padding:0;margin:0}
+.pros-cons-card li{position:relative;padding:7px 0 7px 22px;font-size:12px;line-height:1.55;color:#b8c7da}
+.pros-cons-card li:before{position:absolute;left:0;font-weight:900}
+.pros-list li:before{content:"+";color:#77dbc9}
+.cons-list{border-top:1px solid #ffffff16;margin-top:10px!important;padding-top:8px!important}
+.cons-list li:before{content:"–";color:#ffb28f}
+@media(max-width:640px){.decision-columns,.pros-cons-grid{grid-template-columns:1fr}.decision-panel{padding:17px}.pros-cons-card{padding:16px}}

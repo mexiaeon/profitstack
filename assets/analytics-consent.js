@@ -10,7 +10,7 @@ function load(){
  window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
  window.gtag("js",new Date());window.gtag("config",GA_ID);
  const s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+encodeURIComponent(GA_ID);document.head.appendChild(s);
- document.addEventListener("click",function(e){const a=e.target.closest("a[href]");if(!a)return;let u;try{u=new URL(a.href,location.href)}catch(err){return}if(u.origin!==location.origin)window.gtag("event","provider_link_click",{link_url:u.href,link_text:(a.innerText||a.getAttribute("aria-label")||"").trim().slice(0,100),page_path:location.pathname})});
+ document.addEventListener("click",function(e){const a=e.target.closest("a[href]");if(!a)return;let u;try{u=new URL(a.href,location.href)}catch(err){return}if(u.origin!==location.origin){const linkText=(a.innerText||a.getAttribute("aria-label")||"").trim().slice(0,100);const eventData={link_url:u.href,link_text:linkText,link_domain:u.hostname,page_path:location.pathname};window.gtag("event","provider_link_click",eventData);const isAffiliate=a.relList?a.relList.contains("sponsored"):(/\bsponsored\b/i.test(a.getAttribute("rel")||""));if(isAffiliate)window.gtag("event","affiliate_click",eventData)}});
 }
 function show(){panel.hidden=false;settings.hidden=true}
 function hide(){panel.hidden=true;settings.hidden=false}
